@@ -18,10 +18,10 @@ const params = new URLSearchParams(window.location.search);
 
       function generateTip(category) {
         const tips = {
-          rent: "Consider downsizing, negotiating rent, or finding roommates.",
-          dining: "Try cooking at home more often and reduce takeout.",
+        //   rent: "Consider downsizing, negotiating rent, or finding roommates.",
+          electricity: "Reduce your power consumption. Dont keep appliances running",
           entertainment: "Look for cheaper or free entertainment options.",
-          groceries: "Plan your meals and avoid impulsive grocery runs.",
+          Takeouts: "Plan your meals and avoid impulsive grocery runs.",
           transportation: "Use public transport, walk more, or carpool.",
           default: "Review and reduce expenses if possible in this category."
         };
