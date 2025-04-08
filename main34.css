@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .category-group {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 48%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #results {
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  canvas {
+    margin-top: 20px;
+  }
+  
