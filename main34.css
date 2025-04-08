@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 700px;
+    font-family: 'Delius';
+    max-width: 500px;
     margin: 30px auto;
     padding: 20px;
     background: #f9f6e6;
@@ -10,6 +10,8 @@ body {
   h2 {
     text-align: center;
     color: #8d77ab;
+    font-family: 'Lilita one';
+
   }
   
   .category-group {
