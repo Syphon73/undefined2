@@ -29,9 +29,9 @@ const params = new URLSearchParams(window.location.search);
       }
 
       let resultHTML = `
-        <strong>Total Spent:</strong> $${total}<br>
-        <strong>Average per Category:</strong> $${average.toFixed(2)}<br>
-        <strong>Highest Spending:</strong> ${maxCat} ($${expenses[maxCat]})<br><br>
+        <strong>Total Spent:</strong> Rs${total}<br>
+        <strong>Average per Category:</strong> Rs${average.toFixed(2)}<br>
+        <strong>Highest Spending:</strong> ${maxCat} (Rs${expenses[maxCat]})<br><br>
         <strong>Suggestions:</strong><br>
       `;
 

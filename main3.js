@@ -23,5 +23,5 @@ function addCategory() {
     }
 
     const encodedData = encodeURIComponent(JSON.stringify(expenses));
-    window.location.href = `chart.html?data=${encodedData}`;
+    window.location.href = `main4.html?data=${encodedData}`;
   }
