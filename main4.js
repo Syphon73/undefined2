@@ -52,8 +52,8 @@ const params = new URLSearchParams(window.location.search);
           datasets: [{
             data: values,
             backgroundColor: [
-              '#ff6384', '#36a2eb', '#ffcd56',
-              '#4bc0c0', '#9966ff', '#f67019',
+              '#9966ff', '#e69db8', '#ffd0c7',
+              '#fffece', '#9966ff', '#f67019',
               '#00a950', '#c2185b'
             ],
             borderWidth: 1
