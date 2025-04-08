@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Delius';
     max-width: 500px;
     margin: 30px auto;
     padding: 20px;
@@ -9,6 +9,7 @@ body {
   h2 {
     text-align: center;
     color: #333;
+    font-family: 'Lilita one';
   }
   
   .category-group {
