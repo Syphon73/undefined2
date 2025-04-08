@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Money Manager</title>
 </head>
-<body>
-    <a href="main3.html"><button class="continue-btn">Continue</button></a>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+
+  <h1>Welcome to <B>CHEQUE ME OUT</B></h1>
+  <p>Enter your name to get started:</p>
+
+  <input type="text" id="username" placeholder="Your name" />
+  <br><br>
+  <a href="main3.html".html"><button onclick="goToNextPage()">Continue</button></a>
+
+  <script>
+    function goToNextPage() {
+      const name = document.getElementById("username").value;
+      if (name) {
+        window.location.href = `next.html?name=${encodeURIComponent(name)}`;
+      } else {
+        alert("Please enter your name!");
+      }
+    }
+  </script>
+
 </body>
-</html>
+</html> 
