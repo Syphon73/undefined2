@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7f9;
+    color: #333;
+  }
+  
+  .app-bar {
+    background-color: #2d3e50;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .app-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .app-bar nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  #homepage {
+    padding: 2rem;
+  }
+  
+  #intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #intro .text {
+    max-width: 500px;
+  }
+  
+  #intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a237e;
+  }
+  
+  #intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .continue-btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-btn:hover {
+    background-color: #155ab6;
+  }
+  
+  #intro .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #info {
+    margin-top: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a237e;
+  }
+  
+  #info ul {
+    list-style: none;
+  }
+  
+  #info li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
