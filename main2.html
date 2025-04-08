@@ -1,29 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Money Manager</title>
-</head>
-<body style="font-family: Arial; text-align: center; padding: 50px;">
-
-  <h1>Welcome to <B>CHEQUE ME OUT</B></h1>
-  <p>Enter your name to get started:</p>
-
-  <input type="text" id="username" placeholder="Your name" />
-  <br><br>
-  <a href="main3.html".html"><button onclick="goToNextPage()">Continue</button></a>
-
-  <script>
-    function goToNextPage() {
-      const name = document.getElementById("username").value;
-      if (name) {
-        window.location.href = `next.html?name=${encodeURIComponent(name)}`;
-      } else {
-        alert("Please enter your name!");
-      }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Info with Animated Joke</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
-  </script>
+
+    .container {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .output, .joke, .next-page {
+        margin-top: 20px;
+        font-size: 1.1em;
+        color: #333;
+    }
+
+    .joke {
+        font-style: italic;
+        color: #555;
+        position: relative;
+    }
+
+    /* Animate from below to original position */
+    @keyframes floatUpStop {
+        0%   { transform: translateY(50px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+
+     .next-page {
+        display: none;
+    }
+
+    a:hover {
+        background-color: #1976D2;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>User Information</h2>
+    <input type="text" id="name" placeholder="Enter your name" onblur="showJoke()">
+    <input type="text" id="job" placeholder="Enter your job" onblur="showJoke()">
+    <input type="number" id="salary" placeholder="Enter your total salary" onblur="showJoke()">
+    <button onclick="displayInfo()">Submit</button>
+
+    <div class="joke" id="joke"></div>
+    <div class="output" id="output"></div>
+
+    <!-- Next Page Button -->
+    <div class="next-page" id="nextPage">
+        <a href="main3.html"><button class="continue-btn">Page</button></a>
+    </div>
+</div>
+
+<script>
+    const jokes = [
+        "Why don’t skeletons fight each other? They don’t have the guts!",
+        "Why did the coffee file a police report? It got mugged!",
+        "Why don’t eggs tell jokes? They’d crack each other up!",
+        "What do you call fake spaghetti? An impasta!",
+        "Why was the math book sad? It had too many problems."
+    ];
+
+    function showJoke() {
+        const jokeEl = document.getElementById('joke');
+        const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+        jokeEl.innerText = randomJoke;
+
+        // Reset animation
+        jokeEl.style.animation = 'none';
+        void jokeEl.offsetWidth; // Reflow hack to restart animation
+        jokeEl.style.animation = 'floatUpStop 1.2s ease';
+    }
+
+    function displayInfo() {
+        const name = document.getElementById('name').value;
+        const job = document.getElementById('job').value;
+        const salary = document.getElementById('salary').value;
+
+        if(name && job && salary){
+            document.getElementById('output').innerHTML = `
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Job:</strong> ${job}</p>
+                <p><strong>Total Salary:</strong> ${salary}</p>
+            `;
+            document.getElementById('nextPage').style.display = "block"; // Show Next Page button
+        } else {
+            document.getElementById('output').innerHTML = "<p style='color: red;'>Please fill out all fields.</p>";
+        }
+    }
+</script>
 
 </body>
-</html> 
+</html>
