@@ -6,12 +6,12 @@
   }
   
   body {
-    background-color: #f4f7f9;
+    background-color:#e1eacd;
     color: #333;
   }
   
   .app-bar {
-    background-color: #2d3e50;
+    background-color: #bad8b6;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -21,10 +21,11 @@
   .app-bar .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #8d77ab;
   }
 
   .app-bar nav a {
-    color: white;
+    color: #f9f6e6;
     margin-left: 1.5rem;
     text-decoration: none;
     font-weight: 500;
@@ -50,7 +51,7 @@
   #intro h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #1a237e;
+    color:#bad8b6;
   }
   
   #intro p {
@@ -59,7 +60,7 @@
   }
   
   .continue-btn {
-    background-color: #1a73e8;
+    background-color: #8d77ab;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
